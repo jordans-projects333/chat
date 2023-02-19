@@ -9,7 +9,7 @@ function SignIn({providers}: Props) {
   
   return (
     <div className="flex flex-col justify-center items-center">
-      {Object.values(providers!).map((provider) => (
+      {providers && !!Object.keys(providers).length && Object.values(providers!).map((provider) => (
         <div key={provider.name}>
             <button className="mb-4 border-black border px-4 py-1 rounded-sm" onClick={() => signIn(provider.id, {
                 callbackUrl: `/`,
