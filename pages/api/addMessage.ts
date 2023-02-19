@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { serverPusher } from '../../pusher'
+import { serverPusher } from '../../ugg'
 import redis from '../../redis'
 import { Message } from '../../typings'
 
