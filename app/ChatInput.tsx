@@ -3,7 +3,7 @@ import { FormEvent, useState } from "react"
 import { Message } from "../typings"
 import { v4 as uuid } from 'uuid'
 import useSWR from 'swr'
-import fetcher from "../utils/fetchMessages"
+import fetcher from "../Utils/fetchMessages"
 import { DefaultSession } from "next-auth"
 import { useSession } from "next-auth/react"
 
