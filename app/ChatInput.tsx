@@ -9,7 +9,8 @@ import { useSession } from "next-auth/react"
 
 function ChatInput() {
   const text = async () => {
-   fetch('/api/text')
+    console.log('yo')
+   await fetch('/api/text')
   }
   const { data: session} = useSession()
   const [input, setInput] = useState('')
