@@ -31,7 +31,7 @@ function MessageList({initialMessages}: Props) {
     }
   }, [messages, mutate, clientPusher])
   return (
-    <div>
+    <div className='pt-4'>
       {(messages || initialMessages).map(message => (
         <MessageBox message={message} key={message.id}/>
     ))}

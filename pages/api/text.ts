@@ -8,7 +8,7 @@ export default function sendMessage(req: NextApiRequest, res: NextApiResponse) {
   // console.log(phone, message);
   client.messages
     .create({
-      body: 'https://chat-git-main-jordans-projects333.vercel.app , you received a message!',
+      body: 'cuddle time',
       from: '+16075645663',
       to: '+447720861605',
     })
