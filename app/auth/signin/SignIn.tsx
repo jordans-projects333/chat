@@ -6,7 +6,7 @@ type Props = {
 }
 
 function SignIn({providers}: Props) {
-  
+  console.log(providers)
   return (
     <div className="flex flex-col justify-center items-center">
       {providers && !!Object.keys(providers).length && Object.values(providers!).map((provider) => (
