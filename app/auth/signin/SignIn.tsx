@@ -12,7 +12,7 @@ function SignIn({providers}: Props) {
       {providers && !!Object.keys(providers).length && Object.values(providers!).map((provider) => (
         <div key={provider.name}>
             <button className="mb-4 border-black border px-4 py-1 rounded-sm" onClick={() => signIn(provider.id, {
-                callbackUrl: `https://chat-jordans-projects333.vercel.app/`,
+                callbackUrl: `/`,
             })}>
                 Sign in with {provider.name}
             </button>
