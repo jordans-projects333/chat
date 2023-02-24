@@ -1,5 +1,7 @@
 import './globals.css'
 import ProvidersWrapper from './ProvidersWrapper'
+import ChatInput from './ChatInput'
+import Header from './Header'
 
 export default function RootLayout({
   children,
@@ -11,7 +13,9 @@ export default function RootLayout({
       <head />
       <body>
         <ProvidersWrapper>
+          <Header/>
           {children}
+          <ChatInput />
         </ProvidersWrapper>
       </body>
     </html>
