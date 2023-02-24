@@ -2,7 +2,7 @@
 import useSWR from 'swr'
 import { Message } from '../typings'
 import MessageBox from './MessageBox'
-import fetcher from '../utils/fetchMessages'
+import fetcher from '../Utils/fetchMessages'
 import { useEffect } from 'react'
 import { clientPusher } from '../ugg'
 import { useStore } from '@/zustand/store'
